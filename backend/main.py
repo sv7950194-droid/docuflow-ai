@@ -3,9 +3,9 @@ import datetime
 import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.config.database import Base, engine, SessionLocal
-from backend.models.document import Document
-from backend.routes import upload, documents, analytics
+from config.database import Base, engine, SessionLocal
+from models import document
+from routes import upload, auth
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("docuflow.main")
