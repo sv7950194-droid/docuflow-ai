@@ -1,6 +1,6 @@
 import datetime
 from sqlalchemy import Column, Integer, String, Float, Text, DateTime
-from backend.config.database import Base
+from config.database import Base
 
 class Document(Base):
     __tablename__ = "documents"
